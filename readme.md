@@ -7,6 +7,6 @@ The second function is an integer to roman numerals function which takes any pos
 
 ## How to run
 
-First generate a build with **npm run build**
-Run the memoizer function using **npm run memoizer**
-Run the int to roman numerals function using **npm run romanizer**
+- First generate a build with **npm run build**
+- Run the memoizer function using **npm run memoizer**
+- Run the int to roman numerals function using **npm run romanizer**
