@@ -20,7 +20,8 @@ interface RomanToIntLookup {
   I: number;
 }
 
-const romanToIntLookup = {
+// ordered in reverse so the loop can traverse through the numerals to find the next largest numeral
+const reverseOrderedromanToIntLookup: RomanToIntLookup = {
   M: 1000,
   CM: 900,
   D: 500,
@@ -42,10 +43,11 @@ const recursiveRomanator = <N extends number>(
 ): string => {
   let localNum = number;
   if (number > 0) {
-    for (const numeral in romanToIntLookup) {
-      if (localNum >= romanToIntLookup[numeral]) {
+    for (const numeral in reverseOrderedromanToIntLookup) {
+      if (localNum >= reverseOrderedromanToIntLookup[numeral]) {
         romanAcc += numeral;
-        localNum = (localNum - romanToIntLookup[numeral]) as PositiveInteger<N>;
+        localNum = (localNum -
+          reverseOrderedromanToIntLookup[numeral]) as PositiveInteger<N>;
         break;
       }
     }

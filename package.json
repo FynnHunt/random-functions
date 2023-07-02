@@ -4,7 +4,10 @@
   "description": "Random functions / code challenges",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "memoizer": "node build/memoizer.js",
+    "romanizer": "node build/integerToRomanNumerals.js"
   },
   "author": "Fynn",
   "license": "ISC",

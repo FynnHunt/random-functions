@@ -1,0 +1,8 @@
+{
+  "rootDir": ".",
+  "compilerOptions": {
+    "outDir": "./build",
+    "module": "CommonJS"
+  },
+  "include": ["lib/**/*"]
+}
