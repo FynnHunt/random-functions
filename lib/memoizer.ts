@@ -1,8 +1,6 @@
 type MemoizableFunction = (arg: string) => string;
 
-// this memoizer only supports functions with the MemoizableFunction type signature above
-// this could be extended to read multiple args by spreading the args in the function below and iterating over them
-// checking the cache
+// this memoizer only supports functions with the MemoizableFunction signature above (one arg)
 const memoize = (fn: MemoizableFunction) => {
   let cache = {};
   return (arg: string) => {
